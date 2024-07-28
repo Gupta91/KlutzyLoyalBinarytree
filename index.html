@@ -1,59 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <title>Akuna Alphabet Game</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <head>
+    <title>Alphabet Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <style>
-        .game-container {
-            max-width: 600px;
-            margin: auto;
-            text-align: center;
-        }
-        .row {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
-        .column {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .column button {
-            margin: 5px;
-            padding: 10px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .selected {
-            background-color: yellow;
-        }
-        #polkadotAddress, #mnemonic {
-            display: block;
-            margin-top: 20px;
-        }
+      .game-container {
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+      }
+      .row {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+      }
+      .column {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .column button {
+        margin: 5px;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .selected {
+        background-color: yellow;
+      }
+      #polkadotAddress,
+      #mnemonic {
+        display: block;
+        margin-top: 20px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="game-container">
-        <h1>Akuna Alphabet Game</h1>
-        <div class="row">
-            <div>
-                <h3>Pick a letter from A-M:</h3>
-                <div class="column" id="column1"></div>
-            </div>
-            <div>
-                <h3>Pick a letter from N-Z:</h3>
-                <div class="column" id="column2"></div>
-            </div>
+      <h1>Akuna Alphabet Game</h1>
+      <div class="row">
+        <div>
+          <h3>Pick a letter from A-M:</h3>
+          <div class="column" id="column1"></div>
         </div>
-        <button onclick="playGame()">Play</button>
-        <div id="result"></div>
-        <label for="polkadotAddress">Enter your Polkadot address here:</label>
-        <input type="text" id="polkadotAddress" placeholder="Polkadot Address">
-        <label for="mnemonic">Enter your mnemonic seed phrase here:</label>
-        <input type="text" id="mnemonic" placeholder="Mnemonic Seed Phrase">
+        <div>
+          <h3>Pick a letter from N-Z:</h3>
+          <div class="column" id="column2"></div>
+        </div>
+      </div>
+      <button onclick="playGame()">Play</button>
+      <div id="result"></div>
+      <label for="polkadotAddress">Enter your Polkadot address here:</label>
+      <input type="text" id="polkadotAddress" placeholder="Polkadot Address" />
+      <label for="mnemonic">Enter your mnemonic seed phrase here:</label>
+      <input type="text" id="mnemonic" placeholder="Mnemonic Seed Phrase" />
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
